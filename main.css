@@ -1,0 +1,160 @@
+#one {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.grid-box-1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3%;
+  padding-top: 10%;
+}
+
+.son,
+.daughter {
+  width: 85%;
+  padding-bottom: 100px;
+  padding-left: 15%;
+}
+
+#two {
+  width: 100%;
+  height: 100%;
+}
+
+.uncle {
+  width: 40%;
+  height: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 6%;
+  padding-bottom: 8%;
+}
+
+.grid-box-2 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box,
+.box-0 {
+  width: 400px;
+  width: 400px;
+  box-shadow: 0px 0 10px 1px rgb(238, 238, 238);
+  transition: 0.3s ease ease-out;
+}
+
+.box:hover:nth-child(1) {
+  transform: translate(-5px, -10px);
+  transition: 0.5s ease all;
+}
+
+.box:hover:nth-child(2) {
+  transform: translate(5px, -10px);
+  transition: 0.5s ease all;
+}
+
+.box:hover:nth-child(3) {
+  transform: translate(-5px, 10px);
+  transition: 0.5s ease all;
+}
+
+.box:hover:nth-child(4) {
+  transform: translate(5px, 10px);
+  transition: 0.5s ease all;
+}
+
+#three {
+  background-color: black;
+  padding: 20px;
+}
+
+.mzo {
+  background-color: #fff;
+  width: 400px;
+  width: 400px;
+  transition: 100ms ease-in-out;
+  margin: 0;
+}
+
+.container--one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.container--two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.mzo:hover {
+  transform: scale(1.03);
+  transition: 0.5s ease all;
+}
+/* 
+@media screen,
+(orientation: portrait) {
+  nav {
+    width: 77.09%;
+    left: 8px;
+    right: 8px;
+    top: 0;
+  }
+
+  nav p:nth-child(1) {
+    margin-top: -15px;
+    margin-left: 6%;
+    margin-right: 10%;
+    width: 17%;
+    font-size: 30px;
+  }
+
+  nav p:nth-child(2) {
+    width: 15%;
+    margin-left: 20%;
+  }
+
+  nav p:nth-child(2) {
+    width: 17%;
+  }
+
+  nav p:nth-child(4) {
+    width: 17%;
+    margin-right: -11px;
+  }
+
+  .profile {
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 10%;
+    box-shadow: 0 0 5px #d80df3,
+      0 0 25px #d80df3;
+  }
+  h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  button {
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  padding-top: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+} */
