@@ -1,7 +1,7 @@
 p {
   color: white;
   font-family: arial;
-  font-size: 18px;
+  font-size: 1.3rem;
   word-spacing: 3px;
   margin-top: 0;
   margin-bottom: 0;
@@ -10,8 +10,7 @@ p {
 h1 {
   font-family: arial;
   color: #d80df3;
-  font-size: 70px;
-  width: 100%;
+  font-size: 4.5rem;
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -20,105 +19,53 @@ h1 {
   color: #d80df3;
   font-family: arial;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.8rem;
   text-align: center;
   padding-top: 0;
   padding-bottom: 5%;
   text-shadow: 2px 2px 4px black;
-  margin: o;
 }
 
-.purple-1 {
-  width: 70%;
-  font-family: arial;
-  font-size: 18px;
-  color: #d80df3;
-  text-align: center;
-  padding-top: 12%;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%;
-}
-
-.purple-2 {
-  width: 70%;
-  font-family: arial;
-  font-size: 18px;
-  color: #d80df3;
-  text-align: center;
-  padding-top: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%;
-}
-
-.purple {
-  width: 70%;
-  font-family: arial;
-  font-size: 18px;
-  color: #d80df3;
-  text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 5%;
-}
-
-.black {
-  width: 90%;
-  font-family: arial;
-  font-size: 18px;
-  color: black;
-  text-align: center;
-  padding-bottom: 5%;
+.inline-text {
+  display: flex;
+  justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
-  text-align: center;
 }
-
-.boy {
-  width: 100%;
+.right {
   font-family: arial;
-  font-size: 15px;
+  font-size: 1rem;
   color: #d80df3;
-  text-align: start;
   padding-bottom: 5%;
 }
 
-.girl {
-  width: 100%;
+.left {
   font-family: arial;
-  font-size: 15px;
+  font-size: 1rem;
   color: #d80df3;
   text-align: end;
-
   padding-bottom: 5%;
 }
 
 .channel {
-  width: 100%;
   font-family: arial;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
-
   padding-bottom: 2%;
   padding-left: 5%;
 }
 
-.channel-1 {
-  width: 100%;
+.purple {
   font-family: arial;
-  font-size: 15px;
-  font-weight: bold;
-  color: black;
-  padding-top: 1.4%;
+  font-size: 1.3rem;
+  color: #d80df3;
+  text-align: center;
   padding-bottom: 2%;
-  padding-left: 5%;
 }
-
 .detail {
   font-family: arial;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -126,11 +73,11 @@ h1 {
 }
 
 .biblography {
-  font-size: 20px;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   column-gap: 50px;
-    padding-top: 5%;
+  padding-top: 5%;
   padding-bottom: 2%;
   cursor: default;
   transition: 0.3s ease all;
