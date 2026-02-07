@@ -1,86 +1,92 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  border-radius: 0px;
+  z-index: 100px;
+}
 
-   nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: black;
-      border-radius: 0px;
-      z-index: 100px;
-    }
+nav a {
+  line-height: 50px;
+  height: 50px;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
 
-    nav a {
-      line-height: 50px;
-      height: 50px;
-      font-size: 15px;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      text-decoration: none;
-      text-transform: uppercase;
-      text-align: center;
-      color: #fff;
-      cursor: pointer;
-    }
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all .5s ease 0s;
+  border-radius: ;
+}
 
-    nav .animation {
-      position: absolute;
-      height: 100%;
-      top: 0;
-      z-index: 0;
-      transition: all .5s ease 0s;
-      border-radius: ;
-    }
+a:nth-child(1) {
+  width: 100px;
+}
 
-    a:nth-child(1) {
-      width: 100px;
-    }
+a:nth-child(2) {
+  width: 110px;
+}
 
-    a:nth-child(2) {
-      width: 110px;
-    }
+a:nth-child(3) {
+  width: 100px;
+}
 
-    a:nth-child(3) {
-      width: 100px;
-    }
+a:nth-child(4) {
+  width: 160px;
+}
 
-    a:nth-child(4) {
-      width: 160px;
-    }
+a:nth-child(5) {
+  width: 120px;
+}
 
-    a:nth-child(5) {
-      width: 120px;
-    }
 
-    
-    nav .start-home,
-    a:nth-child(1):hover~.animation {
-      width: 100px;
-      left: 0px;
-      background-color: #1abc9c;
-    }
+nav .start-home,
+a:nth-child(1):hover~.animation {
+  width: 100px;
+  left: 0px;
+  background-color: #1abc9c;
+}
 
-    nav .start-home, a:nth-child(2):hover~.animation{
+nav .start-home,
+a:nth-child(2):hover~.animation {
   width: 110px;
   left: 100px;
   background-color: #e74c3c;
 }
 
-nav .start-home, a:nth-child(3):hover~.animation{
+nav .start-home,
+a:nth-child(3):hover~.animation {
   width: 100px;
   left: 210px;
   background-color: #3498db;
 }
-nav .start-home, a:nth-child(4):hover~.animation{
+
+nav .start-home,
+a:nth-child(4):hover~.animation {
   width: 160px;
   left: 310px;
   background-color: #9b59bc;
 }
-nav .start-home, a:nth-child(5):hover~.animation{
+
+nav .start-home,
+a:nth-child(5):hover~.animation {
   width: 10px;
   left: 470px;
   background-color: black;
-}  
-@media  (max-width: 1200) {}
+}
+
+@media (max-width: 1200) {}
 
 @media (max-width: 1024px) {}
 
