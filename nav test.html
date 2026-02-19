@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .nav-links li {
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: loopAnim 9s ease-in-out infinite;
+    }
+
+    /* Stagger timing */
+    .nav-links li:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .nav-links li:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .nav-links li:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    .nav-links li:nth-child(4) {
+      animation-delay: 3s;
+    }
+
+    /* Animation */
+    @keyframes loopAnim {
+
+      /* Fade in */
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      10% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Stay visible */
+      60% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Fade out */
+      70% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      /* Hidden until restart */
+      100% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li>JAISON</li>
+      <li>SERVICE</li>
+      <li>MY WORK</li>
+      <li>CONTACT ME</li>
+    </ul>
+  </nav>
+</body>
+
+</html>
