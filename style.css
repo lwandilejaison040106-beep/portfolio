@@ -7,9 +7,6 @@ body {
   font-family: sans-serif;
   border: 8px solid #d80df3;
   border-radius: 0px;
-  box-shadow: 0 0 5px #d80df3,
-    0 0 25px #d80df3, 0 0 50px #d80df3,
-    0 0 100px #d80df3, 0 0 200px #d80df3;
 }
 
 #one {
@@ -131,12 +128,14 @@ body {
 }
 
 @media (max-width: 1024px) {
-
+ body {
+    width: 88.3%;
+}
 .container--one {
-  width: 60%;
+  width: 70%;
 }
 .uncle {
-  width: 62%;
+  width: 70%;
   padding: 0;
   margin: 20px auto;
 }
@@ -163,6 +162,9 @@ body {
 
 
 @media (max-width: 768px) {
+  body {
+    width: 88.3%;
+}
   .grid-box-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -207,4 +209,12 @@ body {
     box-shadow: 0 0 10px 1px rgb(238, 238, 238);
     transition: 0.3s ease;
   }
+}
+@media (max-width: 360px) {
+    body {
+    width: 100%;
+}
+.container--one {
+  width: 100%;
+}
 }
