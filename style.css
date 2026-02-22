@@ -9,9 +9,11 @@ body {
   border-radius: 0px;
 }
 
-#one {
+/* #one {
   width: 100%;
   background-color: black;
+   padding: 0;
+  margin: 0 0;
 }
 
 .grid-box-1 {
@@ -20,15 +22,47 @@ body {
   gap: 30px;
   padding: 100px 0;
   align-items: center;
+} */
+#one {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 5% 80px;
 }
 
-.son,
+.grid-box-1 {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+/* .son, */
 .daughter {
   width: 85%;
   padding-bottom: 100px;
   padding-left: 10%;
 }
 
+.son {
+  width: 100%;
+}
+
+.son p:first-child {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.son p:nth-of-type(2) {
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
 #two {
   width: 100%;
   padding: 0;
@@ -128,14 +162,14 @@ body {
 }
 
 @media (max-width: 1024px) {
- body {
-    width: 88.3%;
+    body {
+    width: 100%;
 }
 .container--one {
-  width: 70%;
+  width: 65%;
 }
 .uncle {
-  width: 70%;
+  width: 63%;
   padding: 0;
   margin: 20px auto;
 }
@@ -160,54 +194,55 @@ body {
   }
 }
 
+ @media (max-width: 768px) {
 
-@media (max-width: 768px) {
-  body {
-    width: 88.3%;
+      body {
+    width: 100%;
 }
-  .grid-box-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-
-  .container--one,
-  .container--two {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .grid-box-1 {
-    grid-template-columns: 1 fr 1fr;
+  #one {
+    padding-top: 140px;
     text-align: center;
   }
 
-  .son,
-  .daughter {
-    padding: 0;
-    width: 100%;
+  .grid-box-1 {
+    grid-template-columns: 1fr;
   }
 
-  .uncle {
-    padding: 20px;
-    width: 100%;
+   .grid-box-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    gap: 10px;
   }
-
-  .container--one,
-  .container--two {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .box,
+   .box,
   .box-0 {
     width: 100%;
     max-width: 400px;
     padding: 20px;
     box-shadow: 0 0 10px 1px rgb(238, 238, 238);
     transition: 0.3s ease;
+  }
+     .container--one,
+  .container--two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .son p:nth-of-type(2) {
+    margin: 0 auto 30px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .daughter {
+    display: none;
   }
 }
 @media (max-width: 360px) {
@@ -216,5 +251,10 @@ body {
 }
 .container--one {
   width: 100%;
+}
+ .grid-box-2 {
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 10px;
 }
 }

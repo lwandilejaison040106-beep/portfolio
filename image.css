@@ -96,7 +96,7 @@ button:focus:before {
   transition: 0.3s ease all;
 }
 
-button {
+/* button {
   width: 30%;
   height: 40px;
   font-size: 16px;
@@ -110,6 +110,24 @@ button {
 
   box-shadow: 0 0 5px #0d0c0e,
     0 0 5px #d80df3;
+} */
+
+button {
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #d80df3;
+  background: transparent;
+  color: #d80df3;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #d80df3;
+  color: black;
+  box-shadow: 0 0 20px #d80df3;
 }
 
 button:before {
@@ -121,14 +139,14 @@ button:before {
   right: 50%;
 }
 
-button:hover,
+/* button:hover, */
 button:focus {
   box-shadow: 0 0 5px #d80df3,
     0 0 25px #d80df3, 0 0 50px #d80df3,
     0 0 100px #d80df3, 0 0 200px #d80df3;
 }
 
-button:hover,
+/* button:hover, */
 button:focus:before {
   transition: 0, 5s ease all;
   left: 0;
@@ -160,7 +178,7 @@ button:active {
 }
 
 @media (max-width: 768px) {
- 
+
   button {
     width: 85%;
     margin: 50px auto;
@@ -172,7 +190,7 @@ button:active {
   }
 
   .profile {
-  display: none;
+    display: none;
   }
 
   .picture {
@@ -184,11 +202,12 @@ button:active {
     width: 290px;
     height: 250px;
   }
-  
+
   .logo-box {
     margin-top: 20px;
   }
-    .biblography {
+
+  .biblography {
     margin: 60px 0 20px;
   }
 
@@ -224,7 +243,7 @@ button:active {
     height: 255px;
     margin-bottom: 5px;
   }
-  
+
   .logo-box {
     margin-top: 20px;
   }
