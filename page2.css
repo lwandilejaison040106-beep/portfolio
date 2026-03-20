@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+}
+
+header {
+  height: 100vh;
+  background: rgb(0, 18, 180);
+}
+
+.page-label {
+  margin-top: 40px;
+  transform: translateY(50%);
+
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 900;
+  writing-mode: horizontal-tb;
+  /* vertical text */
+  text-orientation: mixed;
+
+  opacity: 0;
+  animation: slideFadeIn 1.2s ease-out forwards;
+}
+
+.hero {
+  height: 100vh;
+  background: black;
+}
+
+.service-envetory {
+  height: 100vh;
+  background: rgb(0, 18, 180);
+}
+
+.grid-envetory {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+  margin: 0 auto;
+}
+
+.envetory {
+  width: 300px;
+  height: 300px;
+  padding: 10px 20px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+}
+
+.project-envetory {
+  height: 100vh;
+  background: black;
+}

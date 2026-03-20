@@ -9,20 +9,7 @@ body {
   border-radius: 0px;
 }
 
-/* #one {
-  width: 100%;
-  background-color: black;
-   padding: 0;
-  margin: 0 0;
-}
 
-.grid-box-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px;
-  padding: 100px 0;
-  align-items: center;
-} */
 #one {
   width: 100%;
   min-height: 100vh;
@@ -41,7 +28,7 @@ body {
   gap: 60px;
   align-items: center;
 }
-/* .son, */
+
 .daughter {
   width: 85%;
   padding-bottom: 100px;
