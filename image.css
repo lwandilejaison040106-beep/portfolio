@@ -163,7 +163,12 @@ button:active {
     height: 235px;
   }
 }
-
+@media (max-width: 820px) {
+  .mother {
+    margin: 150px auto 0;
+    width: 85%;
+  }
+}
 @media (max-width: 768px) {
 
   button {

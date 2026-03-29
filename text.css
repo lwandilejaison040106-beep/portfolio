@@ -115,6 +115,34 @@ h1 {
   }
 }
 
+@media (max-width: 480px) {
+  
+  h1{
+    width: 100%;
+    text-align: center;
+    margin-left: -0px
+  }
+  .purple-header {
+    font-size: 18px;
+  }
+
+  p,
+  .purple,
+  .detail {
+    font-size: 10px;
+  }
+
+  .right,
+  .left,
+  .channel {
+    font-size: 10px;
+  }
+
+  .biblography {
+    column-gap: 25px;
+    margin: 60px 0 20px;
+  }
+}
 @media (max-width: 360px) {
 
   h1{
