@@ -8,13 +8,6 @@ p {
   font-size: 16px;
   margin: 0
 }
-/* 
-h1 {
-  font-family: arial;
-  color: #d80df3;
-  font-size: 3rem;
-  margin: 50px 0;
-} */
 
 h1 {
   font-size: 3.5rem;
@@ -41,7 +34,7 @@ h1 {
 
 .right {
   font-family: arial;
-  font-size: 1rem;
+  font-size: 14px;
   color: #d80df3;
   padding-bottom: 5%;
 }
@@ -50,6 +43,7 @@ h1 {
   font-family: arial;
   color: #d80df3;
   text-align: end;
+  font-size: 14px;
   padding-bottom: 5%;
 }
 

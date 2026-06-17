@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Dashboard</title>
+    <link rel="stylesheet" href="Automatedbargraphs.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Developer Dashboard</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="data">
+                <div class="data-rows">
+                    <h3>Skills</h3>
+                    <div id="skillNames"></div>
+                </div>
+
+                <div class="data-rows">
+                    <h3>Main Dashboard Area</h3>
+                    <div id="bars"></div>
+                </div>
+
+                <div class="data-rows">
+                    <h3>Percentage</h3>
+                    <div id="percentages"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form>
+                <input type="text" id="skillName" placeholder="Skill Name">
+                <input type="number" id="skillScore" placeholder="Skill Score">
+                <button onclick="addSkill()">Add Skill</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const skillNamesContainer = document.getElementById("skillNames");
+        const skills = [
+            { name: "Java", score: 50 },
+            { name: "HTML", score: 80 },
+            { name: "CSS", score: 70 },
+            { name: "JavaScript", score: 10 }
+        ];
+
+        const barsContainer = document.getElementById("bars");
+        const percentagesContainer = document.getElementById("percentages");
+
+        skills.forEach(skill => {
+
+            // Create skill name
+            const skillName = document.createElement("p");
+            skillName.textContent = skill.name;
+            skillNamesContainer.appendChild(skillName);
+
+            // Create bar
+            const bar = document.createElement("div");
+            bar.classList.add("box");
+
+            barsContainer.appendChild(bar);
+
+            // Create percentage text
+            const percent = document.createElement("p");
+            percent.textContent = "0%";
+
+            percentagesContainer.appendChild(percent);
+
+            // Animate after page loads
+            setTimeout(() => {
+                bar.style.width = skill.score + "%";
+            }, 100);
+
+            // Count up animation
+            let count = 0;
+
+            const timer = setInterval(() => {
+
+                count++;
+
+                percent.textContent = count + "%";
+
+                if (count >= skill.score) {
+                    clearInterval(timer);
+                }
+                else if (skill.score >= 80) {
+                    bar.style.backgroundColor = "blue";
+                }
+                else if (skill.score >= 65) {
+                    bar.style.backgroundColor = "green";
+                }
+                else if (skill.score >= 40) {
+                    bar.style.backgroundColor = "yellow";
+                }
+                else {
+                    bar.style.backgroundColor = "red";
+                }
+
+            }, 20);
+
+        });
+    </script>
+</body>
+
+</html>
