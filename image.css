@@ -74,14 +74,12 @@ button:focus:before {
 }
 
 .logo-box {
-  width: 50%;
+  width: 100%;
+  position: static;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 3%;
-  z-index: 1;
-  transition: box-shadow 0.3 ease all;
-  position: absolute;
-}
+  justify-content: center;
+  gap: 20px;
+} 
 
 .logo {
   width: 30px;
