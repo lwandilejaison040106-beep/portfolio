@@ -521,6 +521,7 @@ a:nth-child(6):hover~.animation {
     }
   }
 /* ================================== */
+
   @media (max-width: 414px) {
 
     nav .start-home,
