@@ -42,3 +42,24 @@
 .projects {
     animation: floating 2s ease-in-out infinite;
 }
+
+/* ===========================================
+   Background IMAGE
+=========================================== */
+
+
+ body { animation: mySlide;
+       /* Specifie ur animation property */ 
+       animation-play-state: running; animation-delay: 0s; /* *begin after */ 
+       animation-timing-function: linear; /* ease-in = eccelerate but doesn't slowdown ease-out = get in quickly and desolorate ease = will do both linear = constant */ 
+       animation-iteration-count: infinite; /* *repeat-it will lope */ 
+       animation-duration: 9s; /* *time */ /* duration, timming function, delay, iteration-count, play-state, animation */ 
+       animation: 9s linear 0s infinite running myColorChange; } /* change the Colors */ 
+       @keyframes myColorChange{ 
+        10%{background-color: red;} 
+        20%{background-color: orange;} 
+        40%{background-color: pink} 
+        60%{background-color: green;} 
+        80%{background-color: blue;} 
+        100%{background-color: purple;} 
+      }

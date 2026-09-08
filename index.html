@@ -371,63 +371,115 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer_links">
-      <div class="footer_nav">
-        <div>
-          <h3>About Us</h3>
-          <nav class="footer-menu">
-            <a href="https://jaisonwebdev.site" target="_blank">Developer</a>
-            <a href="#">Mananger</a>
-            <a href="#"></a>
-          </nav>
-        </div>
+  <footer class="portfolio-footer">
 
-        <div>
-          <h3>Links</h3>
-          <nav class="footer-menu">
-            <a href="#">About Us</a>
-            <a href="#">How it Works</a>
-            <a href="#">Select Your Plan</a>
-            <a href="#">Blog</a>
-            <a href="#">News</a>
-          </nav>
-        </div>
+    <div class="footer-content">
 
-        <div>
-          <h3>Support</h3>
-          <nav class="footer-menu">
-            <a href="#">Contact Us</a>
-            <a href="#">FAQ</a>
-            <a href="#">Advertise</a>
-          </nav>
-        </div>
+      <!-- BRAND -->
+      <div class="footer-section footer-brand">
 
-        <div>
-          <h3>Legal</h3>
-          <nav class="footer-menu">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms and Conditions</a>
-            <a href="#">Claim Business Listing</a>
-            <a href="#">Remove Business Listing</a>
-          </nav>
-        </div>
+        <h2>JAISON</h2>
+
+        <p>
+          Developer focused on building, learning and
+          progressing in technology.
+        </p>
+
       </div>
 
-      <div class="copywright">
-        <p>© 2026 | Mama's Sewing Studio</p>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-section">
+
+        <h3>Quick Links</h3>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">My Work</a>
+        <a href="Automated Bargraph.html">My Progress</a>
+        <a href="contact.html">Contact</a>
+
       </div>
+
+
+      <!-- TECHNOLOGY -->
+      <div class="footer-section">
+
+        <h3>Technology</h3>
+
+        <a href="#">Java Development</a>
+        <a href="#">Web Development</a>
+        <a href="#">SQL & Databases</a>
+        <a href="#">Cloud Computing</a>
+        <a href="#">Cybersecurity</a>
+
+      </div>
+
+
+      <!-- CONNECT -->
+      <div class="footer-section">
+
+        <h3>Connect</h3>
+
+        <a href="https://github.com/lwandilejaison040106" target="_blank" rel="noopener noreferrer">
+          🐙 GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/lwandile-jaison-972a11302/" target="_blank" rel="noopener noreferrer">
+          💼 LinkedIn
+        </a>
+
+        <a href="mailto:lwandilejaison@gmail.com">
+          📧 Email
+        </a>
+
+        <a href="tel:0624019508">
+          📱 062 401 9508
+        </a>
+
+      </div>
+
     </div>
+
+
+    <!-- RATING -->
+
+    <div class="footer-rating">
+
+      <h3>How is my portfolio?</h3>
+
+      <p>
+        Your feedback helps me improve my portfolio.
+      </p>
+
+      <div class="rating-stars" id="ratingStars">
+
+        <button type="button" data-rating="1">★</button>
+        <button type="button" data-rating="2">★</button>
+        <button type="button" data-rating="3">★</button>
+        <button type="button" data-rating="4">★</button>
+        <button type="button" data-rating="5">★</button>
+
+      </div>
+      <p id="ratingMessage"></p>
+    </div>
+
+    <!-- COPYRIGHT -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Jaison. All Rights Reserved.
+      </p>
+
+      <p>
+        Built with HTML • CSS • JavaScript
+      </p>
+
+    </div>
+
   </footer>
-
-  <!-- TEST -->
-
-  <div class="rating-popup">
-    <p>Enjoying my portfolio? ⭐</p>
-    <!-- <button>Rate Me</button> -->
-    <button onclick="sendRating(5)">Rate ⭐</button>
-    <button onclick="closePopup()">Close</button>
-  </div>
 
   <script>
     const menuBtn = document.getElementById("menuBtn");
@@ -508,42 +560,56 @@
     // SEARCH BUTTON
     searchBtn.addEventListener("click", performSearch);
 
-    // Rate BUTTON
-    let hasShown = false;
+    // =========================================
+    // PORTFOLIO RATING
+    // =========================================
 
-    window.addEventListener("scroll", () => {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const pageHeight = document.body.offsetHeight;
+    const ratingStars = document.querySelectorAll("#ratingStars button");
+    const ratingMessage = document.getElementById("ratingMessage");
 
-      if (!hasShown && scrollPosition >= pageHeight - 50) {
-        hasShown = true;
+    ratingStars.forEach((star) => {
 
-        setTimeout(() => {
-          document.querySelector(".rating-popup").classList.add("show");
-        }, 5000);
-      }
+      star.addEventListener("click", () => {
+
+        const rating = Number(star.dataset.rating);
+
+        ratingStars.forEach((button) => {
+
+          const buttonRating = Number(button.dataset.rating);
+
+          if (buttonRating <= rating) {
+            button.classList.add("selected");
+          } else {
+            button.classList.remove("selected");
+          }
+
+        });
+
+        localStorage.setItem("portfolioRating", rating);
+
+        ratingMessage.textContent =
+          `Thank you for rating my portfolio ${rating}/5 ⭐`;
+
+      });
+
     });
 
-    function sendRating(value) {
-      fetch("http://localhost:8080/rate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ value: value })
-      })
-        .then(res => res.text())
-        .then(data => {
-          alert(data);
 
-          // close popup after rating
-          closePopup();
-        });
+    // Restore previous rating
+    const savedRating = localStorage.getItem("portfolioRating");
+
+    if (savedRating) {
+
+      ratingStars.forEach((button) => {
+
+        if (Number(button.dataset.rating) <= Number(savedRating)) {
+          button.classList.add("selected");
+        }
+
+      });
+
     }
 
-    function closePopup() {
-      document.querySelector(".rating-popup").classList.remove("show");
-    }
   </script>
 
 </body>
