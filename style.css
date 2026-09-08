@@ -38,7 +38,7 @@ img {
 
 .hero {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -255,7 +255,7 @@ img {
 /* FOOTER CONTENT */
 
 .footer-content {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -425,8 +425,6 @@ img {
 
 @media (max-width: 600px) {
 
-
-
   .logo-box {
     width: 100%;
     display: flex;
@@ -436,15 +434,12 @@ img {
   }
 }
 
-
-
   /* =========================================
    TABLET
    768px AND BELOW
 ========================================= */
 
   @media (max-width: 768px) {
-
     /* HERO */
 
     #home {
@@ -491,7 +486,6 @@ img {
 
     .footer-content {
       grid-template-columns: repeat(2, 1fr);
-      width: 90%;
     }
 
   }
@@ -531,7 +525,6 @@ img {
 
     .footer-content {
       grid-template-columns: 1fr;
-      width: 90%;
     }
 
     /* RATING */
