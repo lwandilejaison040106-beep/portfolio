@@ -4,16 +4,19 @@
 
 .navbar {
     width: 100%;
-    height: 70px;
-    background: #000;
+    min-height: 70px;
+
     display: flex;
     align-items: center;
-    padding: 0 18px;
+
+    padding: 0 20px;
+    gap: 15px;
+
+    background: #050505;
+
     position: sticky;
     top: 0;
     z-index: 1000;
-    gap: 15px;
-    border-bottom: 1px solid #222;
 }
 
 
@@ -24,136 +27,138 @@
 .nav-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+
     flex-shrink: 0;
 }
 
-
-/* HAMBURGER */
 .menu-btn {
+    width: 38px;
+    height: 38px;
+
     display: flex;
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
     align-items: center;
     justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+    font-size: 21px;
+
+    cursor: pointer;
 }
 
-
-.menu-btn:hover {
-    background: #333;
-}
-
-.menu-btn.active {
-    background: #555;
-}
-
-/* =========================================
-   JAISON LOGO
-========================================= */
 .brand-logo {
     color: white;
     text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
+
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
     white-space: nowrap;
 }
 
 
 /* =========================================
-   DESKTOP LINKS
+   NAVIGATION LINKS
 ========================================= */
 
 .links {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 14px;
+
     flex: 1;
-    min-width: 0;
 }
 
-
 .links a {
-    color: white;
+    color: #aaa;
     text-decoration: none;
-    font-size: 14px;
-    padding: 11px 9px;
-    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 400;
+
     white-space: nowrap;
+
+    transition: 0.3s ease;
 }
 
 .links a:hover {
-    background: #292929;
+    color: white;
 }
+
 
 /* =========================================
    SEARCH
 ========================================= */
+
 .search-container {
-    width: 280px;
-    height: 40px;
-    display: flex;
-    flex-shrink: 1;
-    margin-left: auto;
+    position: relative;
+
+    width: 190px;
+    height: 38px;
+
+    flex-shrink: 0;
 }
 
 .search-container input {
     width: 100%;
-    height: 40px;
-    background: #1c1c1c;
-    border: 1px solid #444;
-    border-right: none;
-    border-radius: 6px 0 0 6px;
-    color: white;
-    padding: 0 13px;
-    font-size: 14px;
-    outline: none;
-    transition: 0.2s;
-}
+    height: 100%;
 
-/* SEARCH BECOMES WHITE WHEN FOCUSED */
+    padding: 0 40px 0 14px;
+
+    border: 1px solid #333;
+    border-radius: 20px;
+
+    outline: none;
+
+    background: #111;
+    color: white;
+
+    font-size: 13px;
+}
 
 .search-container input:focus {
     background: white;
     color: black;
-    border-color: #d80df3;
 }
 
 
-.search-container input::placeholder {
-    color: #999;
-}
+/* SEARCH ICON */
 
-
-.search-container input:focus::placeholder {
-    color: #777;
-}
-
-/* SEARCH BUTTON */
 .search-container button {
-    width: 45px;
-    height: 40px;
-    border: 1px solid #444;
-    background: #1c1c1c;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 6px 6px 0;
-    flex-shrink: 0;
-}
+    position: absolute;
 
+    top: 50%;
+    right: 4px;
+
+    transform: translateY(-50%);
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #444;
+    color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
 
 .search-container button:hover {
-    background: #333;
-}
-
-
-.search-container button.active {
     background: #666;
 }
 
@@ -165,30 +170,40 @@
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+
+    gap: 8px;
+
     flex-shrink: 0;
 }
 
-
 .nav-icon {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex-shrink: 0;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 17px;
+
     border-radius: 50%;
-    cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
-
 .nav-icon:hover {
-    background: #292929;
+    transform: translateY(-2px);
 }
 
 .nav-icon:active {
-    background: #666;
+    background: #555;
 }
-
 
 /* CART NUMBER */
 
@@ -351,89 +366,99 @@
    TABLET
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     .navbar {
-        height: 64px;
-        padding: 0 10px;
+        padding: 0 12px;
         gap: 8px;
     }
 
-    /* HIDE DESKTOP LINKS */
+    /* Hide normal navigation */
     .links {
         display: none;
     }
 
-    /* JAISON */
-    .brand-logo {
-        font-size: 19px;
-    }
-
-    /* SEARCH STAYS ON SAME ROW */
+    /* Search takes available space */
     .search-container {
         flex: 1;
         width: auto;
-        max-width: none;
-        min-width: 80px;
-        margin-left: 5px;
+        max-width: 260px;
+
+        margin-left: auto;
     }
 
+    /* Keep all icons together */
     .nav-right {
-        gap: 1px;
-    }
-
-    .nav-icon {
-        width: 36px;
-        height: 36px;
+        margin-left: 0;
+        gap: 6px;
     }
 }
 
 
 /* =========================================
-   SMALL PHONE
+   PHONE
 ========================================= */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     .navbar {
-        padding: 0 6px;
+        min-height: 60px;
+        padding: 0 8px;
+        gap: 6px;
+    }
 
+    .nav-left {
         gap: 4px;
     }
 
-
     .menu-btn {
-        width: 38px;
-        height: 38px;
+        width: 32px;
+        height: 32px;
 
-        font-size: 23px;
+        font-size: 19px;
     }
-
 
     .brand-logo {
-        font-size: 16px;
-
-        letter-spacing: 1px;
+        font-size: 17px;
     }
 
+
+    /* SEARCH */
 
     .search-container {
-        min-width: 70px;
+        height: 34px;
 
-        margin-left: 2px;
+        flex: 1;
+        width: auto;
+        min-width: 80px;
     }
 
+    .search-container input {
+        padding: 0 34px 0 10px;
+
+        font-size: 10px;
+    }
 
     .search-container button {
-        width: 38px;
+        width: 26px;
+        height: 26px;
+
+        right: 3px;
+
+        font-size: 11px;
     }
 
 
+    /* FOUR ICONS */
+
+    .nav-right {
+        gap: 2px;
+    }
+
     .nav-icon {
-        width: 31px;
-        height: 21px;
+        width: 27px;
+        height: 27px;
 
         font-size: 13px;
     }
-
 }

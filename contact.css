@@ -3,13 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0b0b;
-  color: white;
-}
-
 /* HERO */
 .contact-hero {
   text-align: center;
