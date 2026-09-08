@@ -252,17 +252,13 @@ img {
   padding: 60px 6% 20px;
 }
 
-
 /* FOOTER CONTENT */
 
 .footer-content {
   max-width: 1200px;
   margin: auto;
-
   display: grid;
-  grid-template-columns:
-    1.5fr 1fr 1fr 1fr;
-
+  grid-template-columns: repeat(4, 1fr);
   gap: 50px;
 }
 
@@ -277,12 +273,14 @@ img {
 
 
 .footer-section h3 {
+  color: white;
   margin: 0 0 10px;
   font-size: 18px;
 }
 
 
 .footer-brand h2 {
+  color: white;
   font-size: 28px;
   margin: 0 0 10px;
 }
@@ -317,30 +315,23 @@ img {
 
 .footer-rating {
   text-align: center;
-
   max-width: 500px;
-
-  margin: 60px auto 40px;
-
-  padding: 30px;
+  margin: 20px auto;
+  padding: 20px;
 
   border-top: 1px solid #292929;
   border-bottom: 1px solid #292929;
 }
 
-
 .footer-rating h3 {
   margin-bottom: 8px;
 }
-
 
 .footer-rating p {
   color: #888;
 }
 
-
 /* STARS */
-
 .rating-stars {
   display: flex;
 
@@ -350,7 +341,6 @@ img {
 
   margin: 20px 0;
 }
-
 
 .rating-stars button {
   border: none;
@@ -368,19 +358,14 @@ img {
     transform 0.2s ease;
 }
 
-
 .rating-stars button:hover {
   color: #8a2be2;
-
   transform: scale(1.2);
 }
 
-
 /* SELECTED STARS */
-
 .rating-stars button.selected {
   color: #8a2be2;
-
   transform: scale(1.1);
 }
 
@@ -389,9 +374,7 @@ img {
 
 #ratingMessage {
   min-height: 20px;
-
   color: #8a2be2;
-
   font-size: 14px;
 }
 
@@ -402,21 +385,13 @@ img {
 
 .footer-bottom {
   max-width: 1200px;
-
   margin: 30px auto 0;
-
   padding-top: 20px;
-
   border-top: 1px solid #202020;
-
   display: flex;
-
   justify-content: space-between;
-
   gap: 20px;
-
   color: #666;
-
   font-size: 13px;
 }
 
@@ -450,14 +425,7 @@ img {
 
 @media (max-width: 600px) {
 
-  .footer {
-    width: 100%;
-    padding: 50px 20px 30px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   .logo-box {
     width: 100%;
@@ -466,166 +434,138 @@ img {
     align-items: center;
     gap: 20px;
   }
-
-  .biblography {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    margin: 50px 0 35px;
-    padding: 0;
-  }
-
-  .biblography p {
-    margin: 0;
-    text-align: center;
-  }
-
-  .footer>div:last-child {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer>div:last-child p {
-    text-align: center;
-    line-height: 1.6;
-    margin: 0 auto;
-  }
-
-  .footer>div:last-child a {
-    overflow-wrap: anywhere;
-  }
 }
 
-/* =========================================
+
+
+  /* =========================================
    TABLET
    768px AND BELOW
 ========================================= */
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
 
-  /* HERO */
+    /* HERO */
 
-  #home {
-    padding: 100px 5% 60px;
-    text-align: center;
+    #home {
+      padding: 100px 5% 60px;
+      text-align: center;
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    /* SOCIAL LOGOS */
+
+    .logo-card {
+      width: 100%;
+      max-width: 300px;
+      margin: 30px auto;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    /* BUTTON */
+
+    .projects {
+      width: 85%;
+      max-width: 300px;
+    }
+
+    /* SERVICES */
+
+    .contact-grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+
+    /* MY WORK */
+
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER CONTENT */
+
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+    }
+
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  /* SOCIAL LOGOS */
-
-  .logo-card {
-    width: 100%;
-    max-width: 300px;
-    margin: 30px auto;
-    justify-content: center;
-    gap: 25px;
-  }
-
-  /* BUTTON */
-
-  .projects {
-    width: 85%;
-    max-width: 300px;
-  }
-
-  /* SERVICES */
-
-  .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-    width: 90%;
-  }
-
-  /* MY WORK */
-
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* FOOTER */
-
-
-}
-
-/* =========================================
+  /* =========================================
    MOBILE
    480px AND BELOW
 ========================================= */
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
 
-  /* HERO */
+    /* HERO */
 
-  #home {
-    padding: 90px 20px 50px;
+    #home {
+      padding: 90px 20px 50px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    /* SERVICES */
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    /* MY WORK */
+
+    .product-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    /* FOOTER CONTENT */
+
+    .footer-content {
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+
+    /* RATING */
+
+    .rating-popup {
+      left: 20px;
+      right: 20px;
+      bottom: 15px;
+      text-align: center;
+    }
+
   }
 
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  /* SERVICES */
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* MY WORK */
-
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-
-
-  /* RATING */
-
-  .rating-popup {
-    left: 20px;
-    right: 20px;
-    bottom: 15px;
-    text-align: center;
-  }
-
-  .biblography {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-}
-
-/* =========================================
+  /* =========================================
    SMALL PHONES
 ========================================= */
 
-@media (max-width: 360px) {
+  @media (max-width: 360px) {
 
-  #home {
-    padding-left: 15px;
-    padding-right: 15px;
+    #home {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    h2,
+    p,
+    a {
+      font-size: 10px;
+    }
+
   }
 
-  h1 {
-    font-size: 1rem;
-  }
-
-  h2,
-  p,
-  a {
-    font-size: 10px;
-  }
-
-}
-
-.contact-grid,
-.product-grid {
-  width: 100%;
-}
+  

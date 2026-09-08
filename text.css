@@ -110,13 +110,9 @@ h2 {
    BIBLIOGRAPHY / FOOTER LINKS
 ========================================= */
 
-/* =========================================
-   FOOTER LINKS - FINAL LAYOUT
-========================================= */
-
 .biblography {
   width: 100%;
-  max-width: 700px;
+  max-width: 900px;
 
   display: flex;
   flex-direction: row;
@@ -228,7 +224,7 @@ h2 {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   h2,
