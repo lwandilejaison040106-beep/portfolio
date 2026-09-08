@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+/* ===========================================
+   SECTION ONE
+=========================================== */
+
+/* ===========================================
+   SECTION TWO
+=========================================== */
+
+/* ===========================================
+   SECTION THREE
+=========================================== */
+
 p {
   color: white;
   font-family: arial;
@@ -15,14 +27,20 @@ h1 {
   margin: 0 0 25px 0;
   color: #d80df3;
 }
-.purple-header {
-  color: #d80df3;
-  font-family: arial;
-  font-weight: bold;
+
+h2 {
   font-size: 28px;
   text-align: center;
-  padding: 50px 0;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 0px 2px 4px black;
+  height: 70px;
+  color: white;
+}
+
+.h2 {
+  color: #d80df3;
+  font-size: 28px;
+  text-align: center;
+  height: 70px;
 }
 
 .inline-text {
@@ -45,14 +63,6 @@ h1 {
   text-align: end;
   font-size: 14px;
   padding-bottom: 5%;
-}
-
-.channel {
-  font-family: arial;
-  font-weight: bold;
-  color: black;
-  padding-bottom: 2%;
-  padding-left: 5%;
 }
 
 .purple {
@@ -84,84 +94,3 @@ h1 {
   transition: 0.5s ease all;
 }
 
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .purple-header {
-    font-size: 18px;
-  }
-
-  p,
-  .purple,
-  .detail {
-    font-size: 14px;
-  }
-
-  .right,
-  .left,
-  .channel {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  
-  h1{
-    width: 100%;
-    text-align: center;
-    margin-left: -0px
-  }
-  .purple-header {
-    font-size: 18px;
-  }
-
-  p,
-  .purple,
-  .detail {
-    font-size: 10px;
-  }
-
-  .right,
-  .left,
-  .channel {
-    font-size: 10px;
-  }
-
-  .biblography {
-    column-gap: 25px;
-    margin: 60px 0 20px;
-  }
-}
-@media (max-width: 360px) {
-
-  h1{
-    width: 100%;
-    text-align: center;
-    margin-left: -0px
-  }
-  .purple-header {
-    font-size: 18px;
-  }
-
-  p,
-  .purple,
-  .detail {
-    font-size: 10px;
-  }
-
-  .right,
-  .left,
-  .channel {
-    font-size: 10px;
-  }
-
-  .biblography {
-    column-gap: 25px;
-    margin: 60px 0 20px;
-  }
-}

@@ -7,67 +7,201 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="nav1.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="image.css">
   <link rel="stylesheet" href="text.css">
   <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="animations.css">
 </head>
 
 <body>
-  <div class="body">
-    <!-- <header>
-      <nav class="nav-links">
-        <a href="#">Jaison</a>
-        <a href="#">Service</a>
-        <a href="Automated Bargraph.html">My Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Prograss</a>
-        <div class="animation start-home"></div>
-      </nav>
-    </header> -->
+  <nav class="navbar">
 
-    <header>
+    <!-- LEFT -->
+    <div class="nav-left">
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+        ☰
+      </button>
 
-    <nav class="navbar">
+      <a href="index.html" class="brand-logo">
+        JAISON
+      </a>
+    </div>
 
-        <a href="#" class="logo">JAISON</a>
+    <!-- DESKTOP NAVIGATION -->
+    <div class="links">
 
-        <ul class="nav-links">
+      <a href="index.html">
+        🏠 Home
+      </a>
 
-            <li><a href="#one">Home</a></li>
-            <li><a href="#two">Service</a></li>
-            <li><a href="#three">My Work</a></li>
-            <li><a href="#four">Contact</a></li>
-            <li><a href="Automated Bargraph.html">Progress</a></li>
+      <a href="about.html">
+        👤 About
+      </a>
 
-        </ul>
+      <a href="services.html">
+        💼 Services
+      </a>
 
-        <div class="menu-toggle">
+      <a href="projects.html">
+        📁 My Work
+      </a>
 
-            <span></span>
-            <span></span>
-            <span></span>
+      <a href="Automated Bargraph.html">
+        📊 Progress
+      </a>
 
-        </div>
+      <a href="contact.html">
+        📞 Contact
+      </a>
 
-    </nav>
+    </div>
 
-</header>
+    <!-- SEARCH -->
+    <div class="search-container">
 
-    <main>
-      <Section id="one">
-        <div class="grid-box-1">
-          <div class="son">
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+
+      <button id="searchBtn" type="button" aria-label="Search">
+        🔍
+      </button>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+      <!-- GitHub -->
+      <a class="nav-icon" href="https://github.com/lwandilejaison040106-beep" target="_blank" rel="noopener noreferrer"
+        aria-label="GitHub" title="GitHub">🐙
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="nav-icon" href="https://www.linkedin.com/in/lwandile-jaison-972a11302/" target="_blank"
+        rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">💼
+      </a>
+
+      <!-- Email -->
+      <a class="nav-icon" href="mailto:lwandilejaison040106@gmail.com" aria-label="Email" title="Email me">✉️
+      </a>
+    </div>
+
+  </nav>
+  <!-- DARK OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+
+  <!-- SIDE MENU -->
+  <aside class="side-menu" id="sideMenu">
+    <div class="menu-header">
+      <div class="menu-brand">
+        JAISON
+      </div>
+      <button id="closeMenu" class="close-menu">
+        ✕
+      </button>
+    </div>
+
+
+    <!-- MAIN -->
+    <div class="menu-section">
+      <h4>MAIN</h4>
+      <a href="index.html">
+        <span>🏠</span>
+        Home
+      </a>
+      <a href="about.html">
+        <span>👤</span>
+        About Me
+      </a>
+      <a href="services.html">
+        <span>💼</span>
+        Services
+      </a>
+      <a href="projects.html">
+        <span>📁</span>
+        My Projects
+      </a>
+    </div>
+
+
+    <!-- DEVELOPMENT -->
+    <div class="menu-section">
+      <h4>TECHNOLOGY & DEVELOPMENT</h4>
+      <a href="java.html">
+        <span>☕</span>
+        Java Development
+      </a>
+      <a href="sql.html">
+        <span>🗄️</span>
+        SQL & Databases
+      </a>
+      <a href="cloud.html">
+        <span>☁️</span>
+        Cloud Computing
+      </a>
+      <a href="cybersecurity.html">
+        <span>🛡️</span>
+        Cybersecurity
+      </a>
+      <a href="web-development.html">
+        <span>🌐</span>
+        Web Development
+      </a>
+    </div>
+
+
+    <!-- PORTFOLIO -->
+    <div class="menu-section">
+      <h4>PORTFOLIO</h4>
+      <a href="goals.html">
+        <span>🎯</span>
+        My Goals
+      </a>
+      <a href="Automated Bargraph.html">
+        <span>📊</span>
+        My Progress
+      </a>
+      <a href="achievements.html">
+        <span>🏆</span>
+        Achievements
+      </a>
+      <a href="contact.html">
+        <span>📞</span>
+        Contact
+      </a>
+      <a href="more-info.html">
+        <span>ℹ️</span>
+        More Information
+      </a>
+    </div>
+
+
+    <!-- OTHER -->
+    <div class="menu-section">
+      <h4>OTHER</h4>
+      <a href="dashboard.html">
+        <span>📋</span>
+        Dashboard
+      </a>
+    </div>
+
+  </aside>
+
+  <main>
+    <Section>
+      <section id="home">
+        <div class="hero">
+          <div>
             <div>
               <p>Hi, i'm Jaison an</p>
               <h1>Independent Software Developer<br>& Technical Partner</h1>
               <p>I build Web applications and digital systems turning ideas into
                 functoinal solutions. Partnering with projects to deliver realible, scalable,
                 and professinal software</p>
-              <button>Veiw my projects</button>
+              <button class="projects">View my projects</button>
             </div>
 
-            <div class="mother">
+            <div class="logo-card">
               <img class="logo" src="image/instgram.jpeg" alt="">
               <img class="logo" src="image/th (1).webp" alt="">
               <img class="logo" src="image/OIP.jpeg" alt="">
@@ -75,16 +209,18 @@
             </div>
           </div>
 
-          <div class="daughter">
-            <img class="profile" src="image/Tech industry 1.png" alt="A photo of my career">
+          <div class="hero-image">
+            <img src="image/Tech industry 1.png" alt="Software Developer">
           </div>
         </div>
-      </Section>
+      </section>
+    </Section>
 
-      <section id="two">
-        <p class="purple-header">Services</p>
-        <div class="contact ">
-          <div class="card1">
+    <section>
+      <section id="services">
+        <h2>Services</h2>
+        <div class="contact-grid">
+          <div class="service-card" data-name="">
             <img src="image/2.png">
             <div class="card-content">
               <div>
@@ -93,8 +229,7 @@
               </div>
             </div>
           </div>
-
-          <div class="card1">
+          <div class="service-card" data-name="">
             <img src="image/4.png">
             <div class="card-content">
               <div>
@@ -103,8 +238,7 @@
               </div>
             </div>
           </div>
-
-          <div class="card1">
+          <div class="service-card" data-name="">
             <img src="image/3.png">
             <div class="card-content">
               <div>
@@ -114,7 +248,7 @@
             </div>
 
           </div>
-          <div class="card1">
+          <div class="service-card" data-name="">
             <img src="image/1.png">
             <div class="card-content">
               <div>
@@ -125,130 +259,94 @@
           </div>
         </div>
       </section>
+    </section>
 
-      <section id="three">
-        <section>
-          <div class="section">
-            <p class="purple-header">My Work</p>
-
-            <div class="services">
-              <div class="card">
-                <a href="https://lwandilejaison040106-beep.github.io/Xabas-welding/">
-                  <img src="image/Screenshot 2026-02-19 115330.png">
-                  <div class="card-content">
-                    <h3>Collage sample site</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="https://lwandilejaison040106-beep.github.io/collage-website/">
-                  <img src="image/Screenshot 2026-02-19 115523.png">
-                  <div class="card-content">
-                    <h3>Collage sample site</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="https://jaisonwebdev.site/">
-                  <img src="image/Screenshot 2026-02-19 120957.png">
-                  <div class="card-content">
-                    <h3>Portfolio site</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="https://lwandilejaison040106-beep.github.io/Sewing-website/">
-                  <img src="image/Sweing.png">
-                  <div class="card-content">
-                    <h3>Sweing site</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="https://lwandilejaison040106-beep.github.io/Water-Proofing/">
-                  <img src="image/waterproofing.png">
-                  <div class="card-content">
-                    <h3>Water proofing</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="card">
-                <a href="https://lwandilejaison040106-beep.github.io/Tech-Ecosystem/">
-                  <img src="https://i.pinimg.com/736x/ef/2c/69/ef2c6940e05760d41d696fbb54823d81.jpg">
-                  <div class="card-content">
-                    <h3>Tech ecosystem</h3>
-                    <div class="inline-text">
-                      <p class="right"><b>Project 02</b></p>
-                      <p class="left"><b>More Details</b></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <section id="four">
-        <section>
-          <p class="purple-header">Services</p>
-
-          <div class="contact">
-            <div class="card1">
-              <img src="image/8.png">
+    <section>
+      <section id="gallery">
+        <h2 class="h2">My Work</h2>
+        <div class="product-grid">
+          <div class="product-card" data-name="Construction">
+            <a href="https://lwandilejaison040106-beep.github.io/Xabas-welding/">
+              <img src="image/Screenshot 2026-02-19 115330.png">
               <div class="card-content">
-                <div>
-                  <p class="purple">Phone</p>
-                  <a href="tel:+27661309685">
-                    <p class="detail">+2766 130 9685</p>
-                  </a>
+                <h3>Construction site</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
                 </div>
               </div>
-            </div>
+            </a>
+          </div>
 
-            <div class="card1">
-              <img src="image/9.png">
+          <div class="product-card" data-name="school">
+            <a href="https://lwandilejaison040106-beep.github.io/collage-website/">
+              <img src="image/Screenshot 2026-02-19 115523.png">
               <div class="card-content">
-                <div>
-                  <p class="purple">Email</p>
-                  <a href="mailto:lwandilejaison040106@gmail.com">
-                    <p class="detail">lwandilejaison040106@gmail.com</p>
-                  </a>
+                <h3>School site</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
                 </div>
               </div>
-
-            </div>
+            </a>
           </div>
-        </section>
-      </section>
-    </main>
 
-    <footer>
+          <div class="product-card" data-name="Portfolio">
+            <a href="https://jaisonwebdev.site/">
+              <img src="image/Screenshot 2026-02-19 120957.png">
+              <div class="card-content">
+                <h3>Portfolio site</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card" data-name="Business">
+            <a href="https://lwandilejaison040106-beep.github.io/ecommerce-website/">
+              <img src="image/Sweing.png">
+              <div class="card-content">
+                <h3>Business site</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card" data-name="Company">
+            <a href="https://lwandilejaison040106-beep.github.io/Water-Proofing/">
+              <img src="image/waterproofing.png">
+              <div class="card-content">
+                <h3>Company site</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="product-card" data-name="ecosystem">
+            <a href="https://lwandilejaison040106-beep.github.io/Tech-Ecosystem/">
+              <img src="https://i.pinimg.com/736x/ef/2c/69/ef2c6940e05760d41d696fbb54823d81.jpg">
+              <div class="card-content">
+                <h3>Tech ecosystem</h3>
+                <div class="inline-text">
+                  <p class="right"><b>Project 02</b></p>
+                  <p class="left"><b>More Details</b></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>
       <div class="footer">
         <div class="logo-box">
           <img class="logo" src="image/instgram.jpeg" alt="">
@@ -270,10 +368,59 @@
               <span>lwandilejaison040106-beep</span></a></p>
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
 
-<!-- TEST -->
+  <footer>
+    <div class="footer_links">
+      <div class="footer_nav">
+        <div>
+          <h3>About Us</h3>
+          <nav class="footer-menu">
+            <a href="https://jaisonwebdev.site" target="_blank">Developer</a>
+            <a href="#">Mananger</a>
+            <a href="#"></a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Links</h3>
+          <nav class="footer-menu">
+            <a href="#">About Us</a>
+            <a href="#">How it Works</a>
+            <a href="#">Select Your Plan</a>
+            <a href="#">Blog</a>
+            <a href="#">News</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Support</h3>
+          <nav class="footer-menu">
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Advertise</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Legal</h3>
+          <nav class="footer-menu">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Claim Business Listing</a>
+            <a href="#">Remove Business Listing</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="copywright">
+        <p>© 2026 | Mama's Sewing Studio</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TEST -->
 
   <div class="rating-popup">
     <p>Enjoying my portfolio? ⭐</p>
@@ -282,8 +429,86 @@
     <button onclick="closePopup()">Close</button>
   </div>
 
-
   <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const closeMenu = document.getElementById("closeMenu");
+    const sideMenu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+
+    // OPEN MENU
+    menuBtn.addEventListener("click", () => {
+
+      sideMenu.classList.add("active");
+      overlay.classList.add("active");
+      menuBtn.classList.add("active");
+
+    });
+
+    // CLOSE MENU
+    closeMenu.addEventListener("click", closeMenuFunction);
+
+    // CLICK OUTSIDE MENU
+    overlay.addEventListener("click", closeMenuFunction);
+
+    // CLOSE MENU FUNCTION
+    function closeMenuFunction() {
+
+      sideMenu.classList.remove("active");
+      overlay.classList.remove("active");
+      menuBtn.classList.remove("active");
+
+    }
+
+    // CLOSE WHEN A MENU LINK IS CLICKED
+    document.querySelectorAll(".side-menu a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        closeMenuFunction();
+
+      });
+
+    });
+
+    // SEARCH BUTTON
+    const searchBtn = document.getElementById("searchBtn");
+    searchBtn.addEventListener("click", () => {
+      searchBtn.classList.add("active");
+      setTimeout(() => {
+        searchBtn.classList.remove("active");
+      }, 250);
+    });
+    // =========================================
+    // MAIN CONTENT SEARCH
+    // =========================================
+
+    const searchInput = document.getElementById("searchInput");
+    const searchableItems = document.querySelectorAll(
+      "main .service-card, main .product-card"
+    );
+
+    function performSearch() {
+      const searchTerm = searchInput.value
+        .toLowerCase()
+        .trim();
+
+      searchableItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (searchTerm === "" || text.includes(searchTerm)) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // SEARCH WHILE TYPING
+    searchInput.addEventListener("input", performSearch);
+
+    // SEARCH BUTTON
+    searchBtn.addEventListener("click", performSearch);
+
+    // Rate BUTTON
     let hasShown = false;
 
     window.addEventListener("scroll", () => {

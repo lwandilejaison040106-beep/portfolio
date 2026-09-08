@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Jaison</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-left">
+
+            <button id="menuBtn" class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <a href="index.html" class="brand-logo">
+                JAISON
+            </a>
+
+        </div>
+
+
+        <div class="links">
+
+            <a href="index.html">🏠 Home</a>
+            <a href="about.html">👤 About</a>
+            <a href="services.html">💼 Services</a>
+            <a href="projects.html">📁 My Work</a>
+            <a href="Automated Bargraph.html">📊 Progress</a>
+            <a href="contact.html">📞 Contact</a>
+
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+            <button id="searchBtn" type="button">
+                🔍
+            </button>
+        </div>
+
+
+        <div class="nav-right">
+            <a class="nav-icon" href="https://github.com/lwandilejaison040106-beep" target="_blank"
+                rel="noopener noreferrer" title="GitHub"> 🐙
+            </a>
+
+            <a class="nav-icon" href="https://www.linkedin.com/in/lwandile-jaison-972a11302/" target="_blank"
+                rel="noopener noreferrer" title="LinkedIn"> 💼
+            </a>
+
+            <a class="nav-icon" href="mailto:lwandilejaison040106@gmail.com" title="Email"> ✉️
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <!-- ================= CONTACT PAGE ================= -->
+
+    <main class="contact-page">
+
+        <!-- ================= SCREEN 1 ================= -->
+
+        <section class="contact-screen contact-intro active" id="contactIntro">
+
+            <div class="intro-content">
+
+                <span class="contact-label">CONTACT</span>
+
+                <h1>Let's Connect</h1>
+
+                <p>
+                    I am always interested in connecting with people,
+                    discussing technology, learning opportunities,
+                    projects and career development.
+                </p>
+
+                <div class="intro-line"></div>
+
+                <p class="intro-small">
+                    Have a question, opportunity or project in mind?
+                    Let's start a conversation.
+                </p>
+
+                <button id="nextContact" class="arrow-btn" aria-label="Go to contact form">
+                    →
+                </button>
+
+                <span class="arrow-text">Send me a message</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SCREEN 2 ================= -->
+
+        <section class="contact-screen contact-form-screen" id="contactFormScreen">
+
+            <button id="backContact" class="back-btn">
+                ← Back
+            </button>
+
+            <div class="form-layout">
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact-info">
+
+                    <span class="contact-label">GET IN TOUCH</span>
+
+                    <h2>Let's Talk</h2>
+
+                    <p>
+                        Whether you would like to discuss a project,
+                        opportunity, collaboration or simply connect,
+                        feel free to contact me.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <div class="contact-item">
+
+                            <span>📧</span>
+
+                            <div>
+                                <h3>Email</h3>
+
+                                <a href="mailto:lwandilejaison@gmail.com">
+                                    lwandilejaison@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span>📱</span>
+
+                            <div>
+                                <h3>Phone</h3>
+
+                                <a href="tel:0624019508">
+                                    062 401 9508
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span>💼</span>
+
+                            <div>
+                                <h3>LinkedIn</h3>
+
+                                <a href="https://www.linkedin.com/in/lwandile-jaison-972a11302/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    Connect with me on LinkedIn
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span>🐙</span>
+
+                            <div>
+                                <h3>GitHub</h3>
+
+                                <a href="https://github.com/lwandilejaison040106-beep" target="_blank"
+                                    rel="noopener noreferrer">
+                                    View my GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-form-container">
+
+                    <h2>Send Me a Message</h2>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="hidden" name="access_key" value="78d4ef42-3941-49a2-b2b4-0a6e6b1ca6f0">
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What would you like to discuss?"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="send-btn">Send Message 🚀</button>
+                        <p id="formMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>
+            © 2026 Jaison | Developer Portfolio
+        </p>
+    </footer>
+
+
+    <script>
+
+        const intro = document.getElementById("contactIntro");
+        const formScreen = document.getElementById("contactFormScreen");
+
+        document.getElementById("nextContact").addEventListener("click", () => {
+            intro.classList.remove("active");
+            intro.classList.add("exit");
+
+            formScreen.classList.add("active");
+        });
+
+
+        document.getElementById("backContact").addEventListener("click", () => {
+            formScreen.classList.remove("active");
+
+            intro.classList.remove("exit");
+            intro.classList.add("active");
+        });
+
+    </script>
+
+</body>
+
+</html>

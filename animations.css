@@ -1,0 +1,44 @@
+/* ===========================================
+   FLOATING PROFILE IMAGE
+=========================================== */
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.hero-image img {
+
+    animation: floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.projects {
+    animation: floating 2s ease-in-out infinite;
+}
