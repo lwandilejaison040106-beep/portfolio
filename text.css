@@ -110,106 +110,112 @@ h2 {
    BIBLIOGRAPHY / FOOTER LINKS
 ========================================= */
 
+/* =========================================
+   FOOTER LINKS - FINAL LAYOUT
+========================================= */
+
 .biblography {
+  width: 100%;
+  max-width: 700px;
+
   display: flex;
-  justify-content: space-between;
-  column-gap: 50px;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  cursor: default;
-  transition: 0.3s ease all;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 12px 28px;
+
+  margin: 30px auto 20px;
+  padding: 0;
+
+  text-align: center;
 }
 
 .biblography p {
-  font-size: 12px;
-  font-weight: 400;
-  color: #888;
+  margin: 0;
+  padding: 0;
+
+  font-size: 13px;
+  white-space: nowrap;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
 }
 
 .biblography p:hover {
-  transform: scale(1.08);
+  transform: translateY(-3px);
   color: white;
-  transition: 0.3s ease all;
 }
 
 
 /* =========================================
-   TABLET
+   DEVELOPER CREDIT
 ========================================= */
 
-@media (max-width: 768px) {
+.footer>div:last-child {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  p {
-    font-size: 13px;
-  }
+.footer>div:last-child p {
+  margin: 0;
+  padding: 0;
 
-  h1 {
-    font-size: 2.6rem;
-  }
+  font-size: 13px;
+  line-height: 1.5;
+  color: #999;
+}
 
-  h2,
-  .h2 {
-    font-size: 24px;
-  }
+.footer>div:last-child a {
+  color: #999;
+  text-decoration: none;
 
-  .right,
-  .left {
-    font-size: 11px;
-  }
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
 
-  .purple {
-    font-size: 13px;
-  }
-
-  .biblography p {
-    font-size: 11px;
-  }
+.footer>div:last-child a:hover {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 
 /* =========================================
-   MOBILE
+   PHONE FOOTER
 ========================================= */
 
 @media (max-width: 480px) {
 
-  p {
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2,
-  .h2 {
-    font-size: 21px;
-  }
-
-  .right,
-  .left {
-    font-size: 11px;
-  }
-
-  .purple {
-    font-size: 12px;
-  }
-
-  .detail {
-    font-size: 11px;
-  }
-
   .biblography {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+
+    gap: 10px 20px;
+
+    margin: 25px auto 15px;
   }
 
   .biblography p {
-    font-size: 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .footer>div:last-child {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .footer>div:last-child p {
+    font-size: 11px;
   }
 }
-
 
 /* =========================================
    VERY SMALL PHONES

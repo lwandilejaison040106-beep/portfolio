@@ -444,40 +444,60 @@ img {
 }
 
 
-@media (max-width: 800px) {
+/* =========================================
+   MOBILE FOOTER FIX
+========================================= */
 
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
+@media (max-width: 600px) {
+
+  .footer {
+    width: 100%;
+    padding: 50px 20px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer-bottom {
-    flex-direction: column;
+  .logo-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .biblography {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    margin: 50px 0 35px;
+    padding: 0;
+  }
+
+  .biblography p {
+    margin: 0;
     text-align: center;
   }
 
+  .footer>div:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer>div:last-child p {
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  .footer>div:last-child a {
+    overflow-wrap: anywhere;
+  }
 }
-
-
-@media (max-width: 500px) {
-
-  .portfolio-footer {
-    padding: 45px 7% 20px;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-
-    gap: 30px;
-  }
-
-  .footer-rating {
-    margin-top: 45px;
-  }
-
-}
-
 
 /* =========================================
    TABLET
@@ -496,10 +516,6 @@ img {
   .hero {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-
-  .hero-image {
-    display: none;
   }
 
   /* SOCIAL LOGOS */
@@ -534,15 +550,7 @@ img {
 
   /* FOOTER */
 
-  .footer_nav {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .biblography {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
 }
 
 /* =========================================
@@ -576,16 +584,7 @@ img {
     gap: 20px;
   }
 
-  /* FOOTER */
 
-  .footer_nav {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-menu {
-    align-items: center;
-  }
 
   /* RATING */
 

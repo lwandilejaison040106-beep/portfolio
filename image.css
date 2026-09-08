@@ -90,13 +90,9 @@
 }
 
 @media (max-width: 768px) {
-  button {
-    width: 85%;
-    margin: 50px auto;
-  }
 
   .mother {
-    margin: 0px auto;
+    margin: 0 auto;
     width: 85%;
   }
 
